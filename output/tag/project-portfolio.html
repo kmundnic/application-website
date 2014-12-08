@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>A Pelican Blog - project-portfolio</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">A Pelican Blog </a></h1>
+                <nav><ul>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/category/blog.html">Blog</a></li>
+                    <li><a href="/category/projects.html">Projects</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/uchile-thesis.html">Electrical Engineering thesis</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2013-09-27T09:30:00+00:00">
+                Published: Fri 27 September 2013
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/karel-mundnich.html">Karel Mundnich</a>
+        </address>
+<p>In <a href="/category/projects.html">Projects</a>. </p>
+<p>tags: <a href="/tag/project-portfolio.html">project-portfolio</a> </p>
+</footer><!-- /.post-info --><div class="section" id="id1">
+<h2>Electrical Engineering thesis</h2>
+<p><em>Abstract</em> This work explores and analyzes the use of signal processing tools common in areas of Elec- trical Engineering and Prognostics and Health Management in financial time series analysis. The main objective of this work is to detect high risk events in an early stage. The proposed algorithm employs the strict relation between volatility and risk and detects high volatility clusters by the use of information obtained through a Particle Filter estimation process.</p>
+<p>To achieve the aforementioned objective, the stochastic state-space uGARCH represen- tation is used to model the volatility of continuously compounded returns. Given the non- observability of volatility, two Particle Filter frameworks are implemented for its estimation, which include classic and risk sensitive approaches. The latter includes the use of the Gene- ralized Pareto Distribution as the proposed risk functional (and importance density distri- bution) to ensure the allocation of particles in regions of the state-space that are associated with sudden changes in the volatility of the system.</p>
+<p>To correctly assess the performance of the filtering routines, six data sets have been generated, where both the state and the measurements are known. A sensibility analysis over these six data sets is performed in order to obtain the parameters that permit the best estimation of volatility. From these results, average parameters are calculated in order to use them in the detection scheme.</p>
+<p>The detection stage explores three different techniques. First, a proposed hypothesis test between the prior and posterior probability density function estimates of the Risk Sensitive Particle Filtering process is used. Second, the Fisher Discriminant is used to compare the posterior probability density function estimates of the Particle Filter and Risk Sensitive Particle Filter. Finally, the Kullback-Leibler Divergence is used in the same sense as the Fisher Discriminant. The proposed algorithms are tested in the artificially generated data and in IBM stock market data.</p>
+<p>Results demonstrate that the proposed Risk Sensitive Particle Filter slightly outperforms the Classic Particle Filter in terms of accuracy, in events where unexpected volatility rises occur. Moreover, the hypothesis test employed in the risk sensitive filtering process correctly detects most of the sudden volatility variations conducive to early detection of high volati- lity clusters. Finally, the proposed detection scheme based on the Fisher Discriminant and Kullback-Leibler Divergence is conducive to results where detection is not possible.</p>
+</div>
+                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
