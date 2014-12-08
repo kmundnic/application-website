@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Karel Mundnich</title><link href="http://kmundnic.github.io/" rel="alternate"></link><link href="http://kmundnic.github.io/feeds/all.atom.xml" rel="self"></link><id>http://kmundnic.github.io/</id><updated>2014-12-08T16:10:00-03:00</updated><entry><title>Hello World!</title><link href="http://kmundnic.github.io/hello-world.html" rel="alternate"></link><updated>2014-12-08T16:10:00-03:00</updated><author><name>Karel Mundnich</name></author><id>tag:kmundnic.github.io,2014-12-08:hello-world.html</id><summary type="html">&lt;p&gt;This article is a first post using Pelican, a static site generator using Python. It has extensive and well written documentation, and a nice file hierarchy.&lt;/p&gt;
+&lt;p&gt;This site is published via Github Pages.&lt;/p&gt;
+&lt;p&gt;It supports cool stuff, such as abbrevations like &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;.&lt;/p&gt;
+&lt;p&gt;It is also possible to include images:
+.. image:: ../images/test.jpg&lt;/p&gt;
+&lt;p&gt;Also, one can include code:
+.. code-block:: python&lt;/p&gt;
+&lt;blockquote&gt;
+print &amp;quot;Hello World!&amp;quot;&lt;/blockquote&gt;
+</summary><category term="miscellaneous"></category></entry></feed>
