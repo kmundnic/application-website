@@ -1,74 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-        <meta charset="utf-8" />
-        <title>Karel Mundnich - Terminal</title>
-        <link rel="stylesheet" href="http://kmundnic.github.io/theme/css/main.css" />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Karel Mundnich - Terminal KenIngle.com</title>
 
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-</head>
+    <link rel="stylesheet" href="../theme/css/main.css">
+    <link rel="stylesheet" href="../theme/css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div><img src="" class="grv-img"/></div>
+        <div class="title"><a href="../">Karel Mundnich </a></div>
+        <div class="sub-title"></div>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://kmundnic.github.io/">Karel Mundnich </a></h1>
-                <nav><ul>
-                    <li><a href="http://kmundnic.github.io/pages/about.html">About</a></li>
-                    <li><a href="http://kmundnic.github.io/category/blog.html">Blog</a></li>
-                    <li><a href="http://kmundnic.github.io/category/projects.html">Projects</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+<p>
+    <div class="view"><a href="../pages/about.html">About</a></div>
+  
+        <div >
+            <a href="../category/blog.html">Blog</a>
+        </div>
+        <div >
+            <a href="../category/projects.html">Projects</a>
+        </div>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://kmundnic.github.io/2014/osx-tips.html">OS X Tips</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2014-12-09T08:45:00-03:00">
-                Published: Tue 09 December 2014
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://kmundnic.github.io/author/karel-mundnich.html">Karel Mundnich</a>
-        </address>
-<p>In <a href="http://kmundnic.github.io/category/blog.html">Blog</a>. </p>
-<p>tags: <a href="http://kmundnic.github.io/tag/os-x.html">OS X</a> <a href="http://kmundnic.github.io/tag/terminal.html">Terminal</a> </p>
-</footer><!-- /.post-info --><h3>Launch software from Terminal.app:</h3>
-<ul>
-<li><a href="https://answers.atlassian.com/questions/92436/load-sourcetree-from-current-directory-location-in-terminal">SourceTree</a></li>
-<li><a href="https://gist.github.com/artero/1236170">Sublime</a></li>
-</ul>
-<h3>Block webpages (e.g., Facebook):</h3>
-<p>In Terminal.app,</p>
-<div class="highlight"><pre>sudo nano /etc/hosts
-</pre></div>
-
-
-<p>Add a line with:</p>
-<div class="highlight"><pre>127.0.0.1 www.facebook.com
-</pre></div>                </article>
-<p class="paginator">
-    Page 1 / 1
+  <div class="view"><a href="../archives.html">Archives</a></div>
 </p>
-            </aside><!-- /#featured -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-        </section><!-- /#extras -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+<!-- Social links -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+      </header>
+      <section>
+      <div class="front-title"><a href="../2014/osx-tips.html">OS X Tips</a></div>
+<p>
+<small>
+<abbr class="published" title="2014-12-09T08:45:00-03:00">
+  Tue 09 December 2014
+</abbr> | 
+  tags: 
+    <a href="../tag/os-x.html">OS X</a>, 
+    <a href="../tag/terminal.html">Terminal</a>, 
+ -- (<a href="../2014/osx-tips.html" rel="bookmark">permalink</a>)
+</small>
+</p>      <p>This post is a place to store tips for OS X handling.</p> 
+      <div class="read-more"><a href="../2014/osx-tips.html">read more...</a></div>
+      <hr />
 
-</body>
+      </section>
+      <footer>
+        <p><small>&copy; Karel Mundnich &mdash; Theme based on Sundown by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <!-- Scale fix -->
+    <script>
+      var metas = document.getElementsByTagName('meta');
+      var i;
+      
+      if (navigator.userAgent.match(/iPhone/i)) {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+          }
+        }
+      
+        document.addEventListener("gesturestart", gestureStart, false);
+      }
+
+      function gestureStart() {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+          }
+        }
+      }
+    </script>
+  </body>
 </html>
