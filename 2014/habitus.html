@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Electrical Engineering thesis</title>
+    <title>Habitus</title>
 
     <link rel="stylesheet" href="../theme/css/main.css">
     <link rel="stylesheet" href="../theme/css/pygment_trac.css">
@@ -41,37 +41,29 @@
 <section id="content" class="body">
   <article>
       <div class="article-title">
-        Electrical Engineering thesis
+        Habitus
       </div>
 
     <div class="entry-content">
 <p>
 <small>
-<abbr class="published" title="2013-09-27T09:30:00-03:00">
-  Fri 27 September 2013
+<abbr class="published" title="2014-10-27T00:00:00-03:00">
+  Mon 27 October 2014
 </abbr> | 
   tags: 
     <a href="../tag/project-portfolio.html">project-portfolio</a>, 
     <a href="../tag/research.html">research</a>, 
- -- (<a href="../2013/uchile-thesis.html" rel="bookmark">permalink</a>)
+ -- (<a href="../2014/habitus.html" rel="bookmark">permalink</a>)
 </small>
 </p>      <ul>
-<li><strong>Project title</strong>: Early Detection of High Volatility Clusters using Particle Filters</li>
-<li><strong>Manuscript</strong>: <a href="http://tesis.uchile.cl/bitstream/handle/2250/115486/cf-mundnich_kb.pdf">PDF</a> written in English, with abstract in Spanish/English</li>
-<li><strong>FONDECYT Grant Number</strong>: 1110070.</li>
-<li><strong>FONDECYT Project Title</strong>: “Risk-Sensitive Particle Filtering Framework for Failure Prognosis and uncertainty Representation in Nonlinear Systems with High-Impact/Low-Likelihood Events” (years 2011-2013).</li>
-<li><strong>Principal Investigator</strong>: Marcos Orchard, Faculty of Mathematical and Physical Sciences, Department of Electrical Engineering, Universidad de Chile.</li>
+<li><strong>Project title</strong>: Habitus</li>
+<li><strong>Code</strong>: <a href="https://github.com/kmundnic/Habitus">GitHub Repository</a></li>
 </ul>
-<h3>Abstract</h3>
-<p>This work presents the implementation of early high volatility cluster detectors based on uGARCH models (a variation of the GARCH model), particle- filtering-based state estimators, and hypothesis testing procedures. The detection scheme uses prior and posterior probability estimates to build asymmetric hypothesis tests that detect sudden volatility increments (typically associated with early stages of high-volatility clusters). Performance of the classic particle filter is compared to a risk-sensitive version that aims at tracking regions of the state-space associated to a greater financial risk. The proposed volatility cluster detection scheme is tested and validated using both simulated and actual IBM’s stock market data.</p>
-<h3>Work</h3>
-<ol>
-<li>Optimization of code written in Matlab®, time in calculations diminished to a 10% (using a completely matrix-oriented approach).</li>
-<li>Searching for a new risk functional, and re-implementing the risk-sensitive particle filter.</li>
-<li>Search and test better assessment approaches for the algorithms.</li>
-<li>Search and test detectors for high-volatility clusters.</li>
-<li>Writing the paper to be sent to <a href="http://www.journals.elsevier.com/expert-systems-with-applications/">Expert Systems with Applications</a>.</li>
-</ol>
+<h3>Summary</h3>
+<p>This project aims to capture data from the user of a computer, using a non-invasive approach. Currently, the Habitus software, written in Python, uses a mix of <a href="https://pythonhosted.org/pyobjc/">Pyobjc</a> and <a href="http://en.wikipedia.org/wiki/AppleScript">AppleScript</a> in order to retrieve data from software usage and visited websites.</p>
+<p>The approach taken is the use of the <a href="https://docs.python.org/2/library/threading.html"><code>threading</code></a> Python module, together with timers. A timer is used to retrieve the data in fixed intervals, and threads are used to retrieve and send data.</p>
+<p>To prevent the need for server-side scripting, a Python class has been programmed in order to send e-mails with attachments, and the info is sent to my own Dropbox account, where my own data is being stored.</p>
+<p>I am currently learning Objective-C in order to change the approach taken in this project. The use of timers brings several limitations, and it is very inefficient. Much data may be lost, and therefore, a purely event-driven approach must be employed. Apparently, this can be done with the use of the old <a href="en.wikipedia.org/wiki/Carbon_(API)">Carbon API</a>.</p>
     </div><!-- /.entry-content -->
   </article>
 </section>
