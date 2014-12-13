@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ultrasonic Anemometer</title>
+
+    <link rel="stylesheet" href="../theme/css/main.css">
+    <link rel="stylesheet" href="../theme/css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div><img src="../images/profile_small.jpg" class="grv-img"/></div>
+        <div class="title"><a href="../">Karel Mundnich </a></div>
+        <div class="sub-title"></div>
+
+<p>
+    <div class="view"><a href="../pages/about.html">About</a></div>
+    <div class="view"><a href="../pages/resume.html">Résumé</a></div>
+    <div class="view"><a href="../pages/photography.html">Photography</a></div>
+  
+        <div >
+            <a href="../category/blog.html">Blog</a>
+        </div>
+        <div class="view">
+            <a href="../category/projects.html">Projects</a>
+        </div>
+
+  <div class="view"><a href="../archives.html">Archives</a></div>
+</p>
+
+<!-- Social links -->
+
+      </header>
+      <section>
+<section id="content" class="body">
+  <article>
+      <div class="article-title">
+        Ultrasonic Anemometer
+      </div>
+
+    <div class="entry-content">
+<p>
+<small>
+<abbr class="published" title="2014-01-15T00:00:00-03:00">
+  Wed 15 January 2014
+</abbr> | 
+  tags: 
+    <a href="../tag/project-portfolio.html">project-portfolio</a>, 
+ -- (<a href="../2014/ultrasonic-anemometer.html" rel="bookmark">permalink</a>)
+</small>
+</p>      <ul>
+<li><strong>Project title</strong>: Open-source Ultrasonic Anemometer</li>
+<li><strong>Code</strong>: Repository on <a href="https://code.google.com/p/uch-ultrasonic-anemometer/">Google Code</a></li>
+</ul>
+<h3>Summary</h3>
+<p>This project started as an initiative to create a cheap and open-source ultrasonic anemometer, in order to create and install networks of anemometers that may help meteorologists better understand the physics of the atmosphere in complex scenarios, such as mountainous areas.</p>
+<p>The anemometer was design to be connected to a computer through a USB port. Unlike commercial solutions, where special electronics are created to calculate the speed of sound, the data is retrieved and analyzed in a computer, giving the possibility of using higher-level languages such as Python for data analysis.</p>
+<h3>Work</h3>
+<p>In this project, I worked as a software engineer, writing the code that calculates the speed of the wind in two axes, by measuring the speed of sound. Specific tasks included:</p>
+<ol>
+<li>Research the state-of-the-art in signal processing to calculate time of flight of ultrasonic waves.</li>
+<li>Implement some of the current techniques to calculate the time of flight.</li>
+<li>Create new methods to calculate the time of flight, based on our own data, which included non-linear noise, and references away from 0[V].</li>
+<li>The algorithms were implemented in Python, using <a href="http://www.scipy.org">Scipy</a> and <a href="http://www.numpy.org">Numpy</a>.</li>
+<li>Testing the anemometer in wind tunnels, using standard measurement equipment</li>
+<li>Writing documentation for future developers.</li>
+</ol>
+    </div><!-- /.entry-content -->
+  </article>
+</section>
+      </section>
+      <footer>
+        <p><small>&copy; Karel Mundnich &mdash; Powered by <a href="http://blog.getpelican.com">Pelican</a>, using <a href="https://www.python.org">Python.</a> Theme based on Sundown by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <!-- Scale fix -->
+    <script>
+      var metas = document.getElementsByTagName('meta');
+      var i;
+      
+      if (navigator.userAgent.match(/iPhone/i)) {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+          }
+        }
+      
+        document.addEventListener("gesturestart", gestureStart, false);
+      }
+
+      function gestureStart() {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
