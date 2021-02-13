@@ -1,4 +1,4 @@
-kmundnic.github.io
+Application website
 ==================
 
-Personal website
+Personal website for applications to grad school.
